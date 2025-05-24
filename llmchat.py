@@ -8,6 +8,8 @@ client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 from tools.math_operations import multiply_numbers
 from tools.web_requests import make_http_request
 from tools.database_operations import get_sales_by_month, list_all_sold_products, get_top_expensive_products
+from tools.file_operations import read_file_content
+from tools.json_operations import read_json_file
 
 # Define the tools for the LLM
 tools = [
@@ -104,8 +106,48 @@ tools = [
                 "properties": {}
             }
         }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "read_file_content",
+            "description": "Read the content of a specified file and return it as a string. Use this tool when a user asks to read or retrieve content from a file on the local system.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "description": "The path to the file to be read."
+                    }
+                },
+                "required": ["path"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "read_json_file",
+            "description": "Read the content of a specified JSON file and return it as a formatted string. Use this tool when a user asks to read or analyze structured data from a JSON file, such as accounting data, on the local system.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "description": "The path to the JSON file to be read."
+                    }
+                },
+                "required": ["path"]
+            }
+        }
     }
 ]
+
+# Global variables to track the last-used files for relevant tools
+last_file_paths = {
+    "read_file_content": "examples/sample_text.txt",  # Default file for file operations
+    "read_json_file": "examples/sample.json"          # Default file for JSON operations
+}
 
 # Function to handle chat interaction
 def chat_with_model(messages):
@@ -145,13 +187,23 @@ def handle_tool_call(tool_call):
             tool_desc = tool['function']['description']
             response += f"- `{tool_name}`: {tool_desc}\n"
         return response
+    elif tool_name == "read_file_content":
+        path = tool_arguments.get('path', last_file_paths.get("read_file_content", "examples/sample_text.txt"))
+        last_file_paths["read_file_content"] = path  # Update last-used file
+        result = read_file_content(path)
+        return f"Content of file '{path}':\n{result}"
+    elif tool_name == "read_json_file":
+        path = tool_arguments.get('path', last_file_paths.get("read_json_file", "examples/sample.json"))
+        last_file_paths["read_json_file"] = path  # Update last-used file
+        result = read_json_file(path)
+        return f"Content of JSON file '{path}':\n{result}"
     else:
         return f"Unknown tool: {tool_name}"
 
 # Main chat loop
 def main():
     messages = [
-        {"role": "system", "content": "You are a patient and helpful teacher guiding the user through various operations. Explain what you are doing before and after using tools. Provide clear, step-by-step explanations to help the user learn and understand the process."}
+        {"role": "system", "content": "You are a helpful assistant that can use tools to answer questions. If you don't know the answer, you can search for information. Always use the provided tools to assist with queries. When you decide to use a tool, clearly inform the user by stating which tool you are calling and for what purpose before invoking it. For example, say 'I will call the [tool name] tool to [purpose].' If a tool is not available for a specific task, inform the user and suggest an alternative approach. For file-related tools like 'read_file_content' and 'read_json_file', if the user does not specify a file path, assume they are referring to the last-used file or the default file for that tool (e.g., 'examples/sample_text.txt' for text files, 'examples/sample.json' for JSON files). Track and reference the last-used file for subsequent queries unless a new path is provided."}
     ]
     print("Start chatting with the model (type 'exit' to stop):")
     

@@ -1,0 +1,4156 @@
+{
+  "company_info": {
+    "name": "LiteIT Svenska AB",
+    "organization_number": "5566161658",
+    "fiscal_year": "2022-01-01 - 2022-12-31"
+  },
+  "generated_at": "2025-05-24T15:21:36.923Z",
+  "currency": "SEK",
+  "accounting_context": {
+    "source": "This data comes from Swedish SIE 4 files, which is a standard format for financial data in Sweden.",
+    "accounting_principles": "The data follows double-entry accounting principles where each transaction affects at least two accounts.",
+    "debit_credit_explanation": "In Swedish accounting (BAS), accounts have both debit and credit sides. Negative amounts often indicate entries on the credit side. The general rule is that Assets increase with debit entries, while Liabilities and Equity increase with credit entries.",
+    "accounting_equation": "Assets = Liabilities + Equity",
+    "debit_credit_examples": [
+      {
+        "account_type": "Assets (1xxx)",
+        "debit": "Increase (+)",
+        "credit": "Decrease (-)"
+      },
+      {
+        "account_type": "Liabilities (2xxx)",
+        "debit": "Decrease (-)",
+        "credit": "Increase (+)"
+      },
+      {
+        "account_type": "Equity (3xxx)",
+        "debit": "Decrease (-)",
+        "credit": "Increase (+)"
+      },
+      {
+        "account_type": "Income (3xxx-8xxx)",
+        "debit": "Decrease (-)",
+        "credit": "Increase (+)"
+      },
+      {
+        "account_type": "Expenses (4xxx-8xxx)",
+        "debit": "Increase (+)",
+        "credit": "Decrease (-)"
+      }
+    ],
+    "example_transaction": {
+      "description": "Purchase of equipment for 10,000 SEK",
+      "entries": [
+        {
+          "account": "1220 (Equipment)",
+          "debit": 10000,
+          "credit": 0
+        },
+        {
+          "account": "1930 (Bank Account)",
+          "debit": 0,
+          "credit": 10000
+        }
+      ],
+      "explanation": "The asset (equipment) increases with a debit entry, while another asset (bank account) decreases with a credit entry."
+    }
+  },
+  "history": {
+    "company_name": "LiteIT Svenska AB",
+    "organization_number": "5566161658",
+    "fiscal_year": "2022-01-01 - 2022-12-31",
+    "currency": "SEK",
+    "years_analyzed": 14,
+    "balance_history": {
+      "2010": {
+        "year_label": "2010",
+        "relative_year": "-12",
+        "opening_balances": {
+          "total_assets": 441591,
+          "total_liabilities": -441591,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 6255,
+              "closing_balance": 3255
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 93750,
+              "closing_balance": 162500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 42477,
+              "closing_balance": 2059
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 37025,
+              "closing_balance": 60773
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 175103,
+              "closing_balance": 45713
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -144352,
+              "closing_balance": -72518
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -28166,
+              "closing_balance": -40682
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": -4602,
+              "closing_balance": -4602
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": null,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -71675,
+              "closing_balance": -15854
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -16316,
+              "closing_balance": -22452
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -26239,
+              "closing_balance": -37220
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -10541,
+              "closing_balance": -8253
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 361281,
+          "total_liabilities": -361281,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 6255,
+              "closing_balance": 3255
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 93750,
+              "closing_balance": 162500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 42477,
+              "closing_balance": 2059
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 37025,
+              "closing_balance": 60773
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 175103,
+              "closing_balance": 45713
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -144352,
+              "closing_balance": -72518
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -28166,
+              "closing_balance": -40682
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": -4602,
+              "closing_balance": -4602
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": null,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -71675,
+              "closing_balance": -15854
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -16316,
+              "closing_balance": -22452
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -26239,
+              "closing_balance": -37220
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -10541,
+              "closing_balance": -8253
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -80310,
+          "asset_growth_percentage": "-18.19%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2011": {
+        "year_label": "2011",
+        "relative_year": "-11",
+        "opening_balances": {
+          "total_assets": 361281,
+          "total_liabilities": -361281,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 3255,
+              "closing_balance": 255
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 162500,
+              "closing_balance": 62500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2059,
+              "closing_balance": 2353
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60773,
+              "closing_balance": 60773
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 45713,
+              "closing_balance": 120813
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -72518,
+              "closing_balance": -113200
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -40682,
+              "closing_balance": -5888
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": -4602,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -15854,
+              "closing_balance": -2867
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -22452,
+              "closing_balance": -3974
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -37220,
+              "closing_balance": -39413
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -8253,
+              "closing_balance": -8633
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 333675,
+          "total_liabilities": -333675,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 3255,
+              "closing_balance": 255
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 162500,
+              "closing_balance": 62500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2059,
+              "closing_balance": 2353
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60773,
+              "closing_balance": 60773
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 45713,
+              "closing_balance": 120813
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -72518,
+              "closing_balance": -113200
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -40682,
+              "closing_balance": -5888
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": -4602,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -15854,
+              "closing_balance": -2867
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -22452,
+              "closing_balance": -3974
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -37220,
+              "closing_balance": -39413
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -8253,
+              "closing_balance": -8633
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -27606,
+          "asset_growth_percentage": "-7.64%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2012": {
+        "year_label": "2012",
+        "relative_year": "-10",
+        "opening_balances": {
+          "total_assets": 333675,
+          "total_liabilities": -333675,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 255,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 62500,
+              "closing_balance": 75000
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2353,
+              "closing_balance": 2761
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60773,
+              "closing_balance": 60771
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 120813,
+              "closing_balance": 190798
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -113200,
+              "closing_balance": -119088
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -5888,
+              "closing_balance": -100751
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -2867,
+              "closing_balance": -10828
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -3974,
+              "closing_balance": -11083
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -39413,
+              "closing_balance": -12634
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -8633,
+              "closing_balance": -2227
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 416311,
+          "total_liabilities": -416311,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 255,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 62500,
+              "closing_balance": 75000
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2353,
+              "closing_balance": 2761
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60773,
+              "closing_balance": 60771
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 120813,
+              "closing_balance": 190798
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -113200,
+              "closing_balance": -119088
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -5888,
+              "closing_balance": -100751
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -2867,
+              "closing_balance": -10828
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -3974,
+              "closing_balance": -11083
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -39413,
+              "closing_balance": -12634
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -8633,
+              "closing_balance": -2227
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": 82636,
+          "asset_growth_percentage": "24.77%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2013": {
+        "year_label": "2013",
+        "relative_year": "-9",
+        "opening_balances": {
+          "total_assets": 416311,
+          "total_liabilities": -416311,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 75000,
+              "closing_balance": 12500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2761,
+              "closing_balance": 3059
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60771,
+              "closing_balance": 6012
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": null,
+              "closing_balance": 695
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 190798,
+              "closing_balance": 278042
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -119088,
+              "closing_balance": -219839
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -100751,
+              "closing_balance": -9872
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -10828,
+              "closing_balance": -2699
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -11083,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -12634,
+              "closing_balance": -17952
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -2227,
+              "closing_balance": -2227
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 387289,
+          "total_liabilities": -387289,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 75000,
+              "closing_balance": 12500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 2761,
+              "closing_balance": 3059
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 60771,
+              "closing_balance": 6012
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": null,
+              "closing_balance": 695
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 190798,
+              "closing_balance": 278042
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -119088,
+              "closing_balance": -219839
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -100751,
+              "closing_balance": -9872
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": -25000,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": -10000
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -10828,
+              "closing_balance": -2699
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -11083,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -12634,
+              "closing_balance": -17952
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -2227,
+              "closing_balance": -2227
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -29022,
+          "asset_growth_percentage": "-6.97%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2014": {
+        "year_label": "2014",
+        "relative_year": "-8",
+        "opening_balances": {
+          "total_assets": 387289,
+          "total_liabilities": -387289,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 201981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 12500,
+              "closing_balance": 8750
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 3059,
+              "closing_balance": 3101
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 6012,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 695,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 278042,
+              "closing_balance": 138928
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -219839,
+              "closing_balance": -229711
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -9872,
+              "closing_balance": -34196
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -2699,
+              "closing_balance": -1483
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": -68
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -17952,
+              "closing_balance": -8019
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -2227,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 398177,
+          "total_liabilities": -398177,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 51981,
+              "closing_balance": 201981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 12500,
+              "closing_balance": 8750
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 3059,
+              "closing_balance": 3101
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 6012,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 695,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 278042,
+              "closing_balance": 138928
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -219839,
+              "closing_balance": -229711
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -9872,
+              "closing_balance": -34196
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": -10000,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": -20000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -2699,
+              "closing_balance": -1483
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": -68
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -17952,
+              "closing_balance": -8019
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": -2227,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": 10888,
+          "asset_growth_percentage": "2.81%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2015": {
+        "year_label": "2015",
+        "relative_year": "-7",
+        "opening_balances": {
+          "total_assets": 398177,
+          "total_liabilities": -398177,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 201981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 8750,
+              "closing_balance": 62500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 3101,
+              "closing_balance": 5
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 138928,
+              "closing_balance": 94063
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -229711,
+              "closing_balance": -263907
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -34196,
+              "closing_balance": -24364
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -1483,
+              "closing_balance": -7161
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -68,
+              "closing_balance": -8132
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -8019,
+              "closing_balance": -45702
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 453966,
+          "total_liabilities": -453966,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 35000
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 201981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 8750,
+              "closing_balance": 62500
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 3101,
+              "closing_balance": 5
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 138928,
+              "closing_balance": 94063
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -229711,
+              "closing_balance": -263907
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -34196,
+              "closing_balance": -24364
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": -20000,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -1483,
+              "closing_balance": -7161
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -68,
+              "closing_balance": -8132
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -8019,
+              "closing_balance": -45702
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": 55789,
+          "asset_growth_percentage": "14.01%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2016": {
+        "year_label": "2016",
+        "relative_year": "-6",
+        "opening_balances": {
+          "total_assets": 453966,
+          "total_liabilities": -453966,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 49700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 62500,
+              "closing_balance": 9375
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 5,
+              "closing_balance": 30
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 94063,
+              "closing_balance": 154625
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -263907,
+              "closing_balance": -288271
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -24364,
+              "closing_balance": -24672
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -7161,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -8132,
+              "closing_balance": -752
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -45702,
+              "closing_balance": -57733
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 476128,
+          "total_liabilities": -476128,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 35000,
+              "closing_balance": 49700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 62500,
+              "closing_balance": 9375
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 5,
+              "closing_balance": 30
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 94063,
+              "closing_balance": 154625
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -263907,
+              "closing_balance": -288271
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -24364,
+              "closing_balance": -24672
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -7161,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -8132,
+              "closing_balance": -752
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -45702,
+              "closing_balance": -57733
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": 22162,
+          "asset_growth_percentage": "4.88%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2017": {
+        "year_label": "2017",
+        "relative_year": "-5",
+        "opening_balances": {
+          "total_assets": 476128,
+          "total_liabilities": -476128,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 49700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 9375,
+              "closing_balance": 36250
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 30,
+              "closing_balance": 30
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 154625,
+              "closing_balance": 199944
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -288271,
+              "closing_balance": -312943
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -24672,
+              "closing_balance": -71807
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -752,
+              "closing_balance": -2736
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -57733,
+              "closing_balance": -21136
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 513322,
+          "total_liabilities": -513322,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 49700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 251981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 9375,
+              "closing_balance": 36250
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 30,
+              "closing_balance": 30
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 154625,
+              "closing_balance": 199944
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -288271,
+              "closing_balance": -312943
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -24672,
+              "closing_balance": -71807
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -752,
+              "closing_balance": -2736
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -57733,
+              "closing_balance": -21136
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": 37194,
+          "asset_growth_percentage": "7.81%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2018": {
+        "year_label": "2018",
+        "relative_year": "-4",
+        "opening_balances": {
+          "total_assets": 513322,
+          "total_liabilities": -513322,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 36250,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 30,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 1592
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 199944,
+              "closing_balance": 108367
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -312943,
+              "closing_balance": -384750
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -71807,
+              "closing_balance": -1347
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": -1027
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -2736,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -21136,
+              "closing_balance": -7062
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 498886,
+          "total_liabilities": -498886,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 251981,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 36250,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 30,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 0,
+              "closing_balance": 1592
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 199944,
+              "closing_balance": 108367
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -312943,
+              "closing_balance": -384750
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -71807,
+              "closing_balance": -1347
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": -1027
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": -2736,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -21136,
+              "closing_balance": -7062
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -14436,
+          "asset_growth_percentage": "-2.81%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2019": {
+        "year_label": "2019",
+        "relative_year": "-3",
+        "opening_balances": {
+          "total_assets": 498886,
+          "total_liabilities": -498886,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1592,
+              "closing_balance": 1599
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 108367,
+              "closing_balance": 100872
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -384750,
+              "closing_balance": -386097
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -1347,
+              "closing_balance": 7395.35
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -1027,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": null,
+              "closing_balance": -7996.35
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -7062,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 491398,
+          "total_liabilities": -491398,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1592,
+              "closing_balance": 1599
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 108367,
+              "closing_balance": 100872
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -384750,
+              "closing_balance": -386097
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": -1347,
+              "closing_balance": 7395.35
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": -1027,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": null,
+              "closing_balance": -7996.35
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": -7062,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -7488,
+          "asset_growth_percentage": "-1.50%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2020": {
+        "year_label": "2020",
+        "relative_year": "-2",
+        "opening_balances": {
+          "total_assets": 491398,
+          "total_liabilities": -491398,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1599,
+              "closing_balance": 1261
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 100872,
+              "closing_balance": 86949.31
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -386097,
+              "closing_balance": -378701.65
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": 7395.35,
+              "closing_balance": 6264.34
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2611": {
+              "account_number": "2611",
+              "account_name": "Utgående moms på försäljning inom Sverige, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": -7996.35,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 477137.31,
+          "total_liabilities": -477137.31,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 14700
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 363739
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1599,
+              "closing_balance": 1261
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 100872,
+              "closing_balance": 86949.31
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -386097,
+              "closing_balance": -378701.65
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": 7395.35,
+              "closing_balance": 6264.34
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2611": {
+              "account_number": "2611",
+              "account_name": "Utgående moms på försäljning inom Sverige, 25 %",
+              "opening_balance": null,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": -7996.35,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {
+          "asset_growth": -14260.690000000002,
+          "asset_growth_percentage": "-2.90%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2021": {
+        "year_label": "2021",
+        "relative_year": "-1",
+        "opening_balances": {
+          "total_assets": 477137.31,
+          "total_liabilities": -477137.31,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 0
+            },
+            "1351": {
+              "account_number": "1351",
+              "account_name": "Andelar i börsnoterade företag",
+              "opening_balance": null,
+              "closing_balance": 453439
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 0
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1261,
+              "closing_balance": 1142
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 86949.31,
+              "closing_balance": 6298.81
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -378701.65,
+              "closing_balance": -372437.31
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": 6264.34,
+              "closing_balance": 5769.5
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2611": {
+              "account_number": "2611",
+              "account_name": "Utgående moms på försäljning inom Sverige, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "closing_balances": {
+          "total_assets": 471367.81,
+          "total_liabilities": -471367.81,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": 14700,
+              "closing_balance": 0
+            },
+            "1351": {
+              "account_number": "1351",
+              "account_name": "Andelar i börsnoterade företag",
+              "opening_balance": null,
+              "closing_balance": 453439
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": 363739,
+              "closing_balance": 0
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": 71,
+              "closing_balance": 71
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": 10417,
+              "closing_balance": 10417
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": 1261,
+              "closing_balance": 1142
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": 86949.31,
+              "closing_balance": 6298.81
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": -100000,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": -4700,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": -378701.65,
+              "closing_balance": -372437.31
+            },
+            "2098": {
+              "account_number": "2098",
+              "account_name": "Vinst eller förlust från föregående år",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": 6264.34,
+              "closing_balance": 5769.5
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2131": {
+              "account_number": "2131",
+              "account_name": "Periodiseringsfond 2011",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2512": {
+              "account_number": "2512",
+              "account_name": "Beräknad inkomstskatt",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2610": {
+              "account_number": "2610",
+              "account_name": "Utgående moms, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2611": {
+              "account_number": "2611",
+              "account_name": "Utgående moms på försäljning inom Sverige, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2614": {
+              "account_number": "2614",
+              "account_name": "Utgående moms omvänd skattskyldighet, 25 %",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2640": {
+              "account_number": "2640",
+              "account_name": "Ingående moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2645": {
+              "account_number": "2645",
+              "account_name": "Beräknad ingående moms på förvärv från utlandet",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2890": {
+              "account_number": "2890",
+              "account_name": "Övriga kortfristiga skulder",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": 0,
+              "closing_balance": 0
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": 0,
+              "closing_balance": 0
+            }
+          },
+          "equity": {}
+        },
+        "results": {
+          "total_income": 0.3,
+          "total_expenses": 5769.2,
+          "net_result": -5768.9,
+          "income_accounts": {
+            "3740": {
+              "account_number": "3740",
+              "account_name": "Öres- och kronutjämning",
+              "amount": 0.3
+            }
+          },
+          "expense_accounts": {
+            "5410": {
+              "account_number": "5410",
+              "account_name": "Förbrukningsinventarier",
+              "amount": 3903.2
+            },
+            "6230": {
+              "account_number": "6230",
+              "account_name": "Datakommunikation",
+              "amount": 666
+            },
+            "6570": {
+              "account_number": "6570",
+              "account_name": "Bankkostnader",
+              "amount": 1200
+            }
+          }
+        },
+        "key_metrics": {
+          "asset_growth": -5769.5,
+          "asset_growth_percentage": "-1.21%",
+          "equity_growth": 0,
+          "equity_growth_percentage": "N/A",
+          "debt_to_equity_ratio": "N/A",
+          "current_ratio": "-1.00"
+        }
+      },
+      "2022": {
+        "year_label": "2022",
+        "relative_year": "2022",
+        "opening_balances": {},
+        "closing_balances": {
+          "total_assets": 439975.43000000005,
+          "total_liabilities": -439975.43,
+          "total_equity": 0,
+          "assets": {
+            "1250": {
+              "account_number": "1250",
+              "account_name": "Datorer",
+              "opening_balance": null,
+              "closing_balance": 6255
+            },
+            "1330": {
+              "account_number": "1330",
+              "account_name": "Andelar i intresseföretag",
+              "opening_balance": null,
+              "closing_balance": 35000
+            },
+            "1351": {
+              "account_number": "1351",
+              "account_name": "Andelar i börsnoterade företag",
+              "opening_balance": null,
+              "closing_balance": -9999.98
+            },
+            "1354": {
+              "account_number": "1354",
+              "account_name": "Obligationer",
+              "opening_balance": null,
+              "closing_balance": 51981
+            },
+            "1510": {
+              "account_number": "1510",
+              "account_name": "Kundfordringar",
+              "opening_balance": null,
+              "closing_balance": 93750
+            },
+            "1630": {
+              "account_number": "1630",
+              "account_name": "Avräkning för skatter och avgifter (skattekonto)",
+              "opening_balance": null,
+              "closing_balance": 42489
+            },
+            "1640": {
+              "account_number": "1640",
+              "account_name": "Skattefordringar",
+              "opening_balance": null,
+              "closing_balance": 37025
+            },
+            "1650": {
+              "account_number": "1650",
+              "account_name": "Momsfordran",
+              "opening_balance": null,
+              "closing_balance": -1142
+            },
+            "1930": {
+              "account_number": "1930",
+              "account_name": "Företagskonto / affärskonto",
+              "opening_balance": null,
+              "closing_balance": 184617.41
+            }
+          },
+          "liabilities": {
+            "2081": {
+              "account_number": "2081",
+              "account_name": "Aktiekapital",
+              "opening_balance": null,
+              "closing_balance": -100000
+            },
+            "2086": {
+              "account_number": "2086",
+              "account_name": "Reservfond",
+              "opening_balance": null,
+              "closing_balance": -4700
+            },
+            "2091": {
+              "account_number": "2091",
+              "account_name": "Balanserad vinst eller förlust",
+              "opening_balance": null,
+              "closing_balance": -138582.5
+            },
+            "2099": {
+              "account_number": "2099",
+              "account_name": "Årets resultat",
+              "opening_balance": null,
+              "closing_balance": -32319.93
+            },
+            "2128": {
+              "account_number": "2128",
+              "account_name": "Periodiseringsfond 2018",
+              "opening_balance": null,
+              "closing_balance": -4602
+            },
+            "2129": {
+              "account_number": "2129",
+              "account_name": "Periodiseringsfond 2019",
+              "opening_balance": null,
+              "closing_balance": -25000
+            },
+            "2130": {
+              "account_number": "2130",
+              "account_name": "Periodiseringsfond 2010",
+              "opening_balance": null,
+              "closing_balance": -10000
+            },
+            "2510": {
+              "account_number": "2510",
+              "account_name": "Skatteskulder",
+              "opening_balance": null,
+              "closing_balance": -71675
+            },
+            "2650": {
+              "account_number": "2650",
+              "account_name": "Redovisningskonto för moms",
+              "opening_balance": null,
+              "closing_balance": -16316
+            },
+            "2893": {
+              "account_number": "2893",
+              "account_name": "Skulder till närstående personer, kortfristig del",
+              "opening_balance": null,
+              "closing_balance": -26239
+            },
+            "2990": {
+              "account_number": "2990",
+              "account_name": "Övriga upplupna kostnader och förutbetalda intäkter",
+              "opening_balance": null,
+              "closing_balance": -10541
+            }
+          },
+          "equity": {}
+        },
+        "results": {},
+        "key_metrics": {}
+      }
+    }
+  }
+}

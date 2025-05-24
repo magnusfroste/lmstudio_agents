@@ -1,0 +1,7 @@
+Hello, this is a sample text file for testing the File System Operations tool in the LM Studio Chat Interface mini framework.
+
+This file contains some example content that the LLM can read and process using the `read_file_content` function. Feel free to modify this text or create new files to test the functionality further.
+
+Best regards,
+The LM Studio Team
+
