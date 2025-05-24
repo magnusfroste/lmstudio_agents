@@ -12,6 +12,11 @@ from tools.file_operations import read_file_content
 from tools.json_operations import read_json_file
 
 # Define the tools for the LLM
+# TOOL_METADATA: This 'tools' list is critical for tool calling. Each dictionary here represents metadata that the LLM uses to decide which tool to invoke based on user queries.
+# The 'name' field identifies the tool uniquely; it must match exactly what the LLM calls.
+# The 'description' field is vital - it explains the tool's purpose to the LLM, guiding it to match user intent (e.g., 'multiply numbers' for math queries).
+# The 'parameters' define what inputs the tool expects, helping the LLM extract correct arguments from user input.
+# Clear, specific metadata ensures the LLM selects the right tool; vague or overlapping descriptions can lead to incorrect decisions.
 tools = [
     {
         "type": "function",
@@ -44,7 +49,7 @@ tools = [
                 "properties": {
                     "url": {
                         "type": "string",
-                        "description": "The URL to make the HTTP GET request to"
+                        "description": "The URL to make the GET request to"
                     }
                 },
                 "required": ["url"]
@@ -55,13 +60,13 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_sales_by_month",
-            "description": "Retrieve the total sales revenue and number of items sold for a specific month from the product sales database. Use this tool when a user asks about sales data, revenue, or how much was sold in a particular month or time period. The month parameter must be in 'YYYY-MM' format (e.g., '2025-01' for January 2025). If the user specifies a month by name (like 'January'), convert it to the correct 'YYYY-MM' format before calling this tool.",
+            "description": "Get total sales for a specific month from the database. Use YYYY-MM format.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "month": {
                         "type": "string",
-                        "description": "The month in 'YYYY-MM' format (e.g., '2025-01' for January 2025). Ensure the format is correct when calling this tool."
+                        "description": "The month in YYYY-MM format"
                     }
                 },
                 "required": ["month"]
@@ -72,7 +77,7 @@ tools = [
         "type": "function",
         "function": {
             "name": "list_all_sold_products",
-            "description": "Retrieve a list of all unique products sold in the database along with the total quantity sold and total revenue for each. Use this tool when a user asks to see all sold products, a list of products, or general sales inventory data.",
+            "description": "List all sold products from the database.",
             "parameters": {
                 "type": "object",
                 "properties": {}
@@ -83,14 +88,45 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_top_expensive_products",
-            "description": "Retrieve a list of the top most expensive individual product sales from the database, including product name, price, and sale date. Use this tool when a user asks about the most expensive products, highest priced sales, or top sales by price. The default is to return the top 5 if no specific number is mentioned, but a custom limit can be specified.",
+            "description": "Get the top most expensive sold products from the database.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "limit": {
                         "type": "integer",
-                        "description": "The number of top expensive products to retrieve. Default is 5 if not specified.",
-                        "default": 5
+                        "description": "Number of top products to return, default is 5"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "read_file_content",
+            "description": "Read and return content from a local text file for discussion or analysis.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "description": "Path to the text file, relative to project directory"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "read_json_file",
+            "description": "Read and return content from a JSON file for analysis, such as accounting data.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "description": "Path to the JSON file, relative to project directory"
                     }
                 }
             }
@@ -100,44 +136,10 @@ tools = [
         "type": "function",
         "function": {
             "name": "list_available_tools",
-            "description": "List all available tools and functions that I can use to assist you. Use this tool when a user asks what functions are supported, what I can do, or to show the list of available tools and capabilities.",
+            "description": "List all available tools and their functions to the user.",
             "parameters": {
                 "type": "object",
                 "properties": {}
-            }
-        }
-    },
-    {
-        "type": "function",
-        "function": {
-            "name": "read_file_content",
-            "description": "Read the content of a specified file and return it as a string. Use this tool when a user asks to read or retrieve content from a file on the local system.",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "path": {
-                        "type": "string",
-                        "description": "The path to the file to be read."
-                    }
-                },
-                "required": ["path"]
-            }
-        }
-    },
-    {
-        "type": "function",
-        "function": {
-            "name": "read_json_file",
-            "description": "Read the content of a specified JSON file and return it as a formatted string. Use this tool when a user asks to read or analyze structured data from a JSON file, such as accounting data, on the local system.",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "path": {
-                        "type": "string",
-                        "description": "The path to the JSON file to be read."
-                    }
-                },
-                "required": ["path"]
             }
         }
     }
@@ -166,6 +168,10 @@ def chat_with_model(messages):
     return response.choices[0].message
 
 # Router to handle tool calls
+# TOOL_METADATA_USAGE: This function is where the LLM's decision to call a tool is acted upon.
+# The 'tool_call' object contains the tool name and arguments decided by the LLM based on the metadata in the 'tools' list.
+# Observing which tool is called and with what arguments helps users understand how well the metadata matched the user's query.
+# If the LLM calls the wrong tool or provides incorrect parameters, it often indicates a need to refine the tool's description or parameters in the metadata.
 def handle_tool_call(tool_call):
     tool_name = tool_call.function.name
     tool_arguments = json.loads(tool_call.function.arguments)
@@ -209,6 +215,10 @@ def handle_tool_call(tool_call):
 # Main chat loop
 def main():
     messages = [
+        # TOOL_METADATA_GUIDANCE: The system prompt below is crucial metadata for tool calling decisions.
+        # It instructs the LLM on its behavior regarding tool usage, explicitly guiding it to use tools when queries match tool purposes.
+        # It also sets expectations for when to assume default contexts (like last-used files), influencing how the LLM interprets follow-up queries.
+        # A clear system prompt ensures the LLM prioritizes tool calling appropriately; vague instructions can lead to inconsistent decisions.
         {"role": "system", "content": "You are a helpful assistant that can use tools to answer questions. If you don't know the answer, you can search for information. Always use the provided tools to assist with queries. When you decide to use a tool, clearly inform the user by stating which tool you are calling and for what purpose before invoking it. For example, say 'I will call the [tool name] tool to [purpose].' If a tool is not available for a specific task, inform the user and suggest an alternative approach. For file-related tools like 'read_file_content' and 'read_json_file', if the user does not specify a file path, assume they are referring to the last-used file or the default file for that tool (e.g., 'examples/sample_text.txt' for text files, 'examples/sample.json' for JSON files). Track and reference the last-used file for subsequent queries unless a new path is provided."}
     ]
     print("Start chatting with the model (type 'exit' to stop):")
@@ -223,7 +233,10 @@ def main():
         print(f"Assistant: {assistant_message.content}")
         messages.append({"role": "assistant", "content": assistant_message.content})
         
-        # Check if the assistant wants to call a tool
+        # TOOL_METADATA_EXECUTION: This section checks if the LLM decided to call a tool based on the metadata and user input.
+        # If 'tool_calls' are present, it means the LLM matched the query to a tool's metadata (name and description) and extracted parameters as defined.
+        # This is a key point to observe the outcome of the LLM's decision-making process - which tool was chosen and why (based on metadata matching).
+        # Users can learn from this by seeing how query phrasing influences tool selection.
         if hasattr(assistant_message, 'tool_calls') and assistant_message.tool_calls:
             for tool_call in assistant_message.tool_calls:
                 tool_response = handle_tool_call(tool_call)
