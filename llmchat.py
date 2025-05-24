@@ -149,6 +149,12 @@ last_file_paths = {
     "read_json_file": "examples/sample.json"          # Default file for JSON operations
 }
 
+# ANSI escape codes for terminal formatting
+BOLD = "\033[1m"
+RESET = "\033[0m"
+CYAN = "\033[96m"
+GREEN = "\033[92m"
+
 # Function to handle chat interaction
 def chat_with_model(messages):
     response = client.chat.completions.create(
@@ -181,11 +187,11 @@ def handle_tool_call(tool_call):
         result = get_top_expensive_products(limit)
         return result
     elif tool_name == "list_available_tools":
-        response = "Here are the tools and functions I can assist you with:\n"
+        response = f"{BOLD}{CYAN}Here are the tools and functions I can assist you with:{RESET}\n"
         for tool in tools:
             tool_name = tool['function']['name']
             tool_desc = tool['function']['description']
-            response += f"- `{tool_name}`: {tool_desc}\n"
+            response += f"{GREEN}- `{tool_name}`{RESET}: {tool_desc}\n"
         return response
     elif tool_name == "read_file_content":
         path = tool_arguments.get('path', last_file_paths.get("read_file_content", "examples/sample_text.txt"))
