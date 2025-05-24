@@ -6,7 +6,7 @@ This project demonstrates how to use LM Studio's function calling capability to 
 
 This project provides a modular framework for interacting with an LLM using function calling in LM Studio. The structure is designed to be easily extensible for adding new tools:
 
-- **`lm_tool_interaction.py`**: The main script that handles chat interactions with the LLM and routes tool calls to the appropriate functions.
+- **`llmchat.py`**: The main script that handles chat interactions with the LLM and routes tool calls to the appropriate functions.
 - **`tools/`**: A directory containing modules for each tool/function:
   - **`math_operations.py`**: Contains functions for mathematical operations like multiplication.
   - **`web_requests.py`**: Contains functions for making HTTP requests.
@@ -23,22 +23,25 @@ This project provides a modular framework for interacting with an LLM using func
 
 ## Setup
 
-1. **Clone the Repository**: If you haven't already, clone this repository to your local machine.
-2. **Run the Installation Script**: Execute `./install.sh` to set up the virtual environment, install dependencies, and create the sample sales database. This script will:
-   - Check if Python 3.6 or higher is installed.
-   - Create a virtual environment named `venv`.
-   - Activate the virtual environment and install required packages (`openai` and `requests`) from `requirements.txt`.
-   - Run `create_sales_database.py` to generate the sample database with 50 sales records.
-3. **Activate the Virtual Environment**: If the script doesn't work or you prefer manual setup, run `source venv/bin/activate` (Mac/Linux) or `venv\Scripts\activate` (Windows) after ensuring the virtual environment is created.
+### Installation
 
-**Note**: Ensure LM Studio is installed and running as a server on `localhost:1234` with a model like Qwen2.5-7B-Instruct-GGUF loaded before starting the application. On macOS, LM Studio supports MLX models, which are optimized for Apple Silicon and can provide better performance. You can load MLX models like `MLX-Qwen2.5-7B-Instruct` for enhanced efficiency on Mac.
+1. **Clone the Repository**: Clone this repository to your local machine.
+2. **Run the Installation Script**: Navigate to the project directory and run `./install.sh`. This script now offers an **interactive menu** that will guide you through the setup process with step-by-step feedback and confirmation prompts. It will:
+   - Check if Python 3.6 or higher is installed.
+   - Create and activate a virtual environment if not already activated.
+   - Install the required dependencies from `requirements.txt`.
+   - Check if the LM Studio server is running and offer to start it if not.
+   - Create the sample sales database if it doesn't exist.
+3. **Start LM Studio Server**: If the server is not running, the script will prompt you to start it with `lms server start` and ensure a model like Qwen2.5-7B-Instruct-GGUF is loaded.
+
+**Note**: If you encounter issues with the server not being detected, ensure `lms` is installed and accessible in your terminal. You can manually start the server with `lms server start` before running the script again. If the virtual environment is not activated automatically, you can activate it manually with `source venv/bin/activate`.
 
 ## Running the Project
 
 Run the main script to start interacting with the LLM:
 
 ```bash
-python lm_tool_interaction.py
+python llmchat.py
 ```
 
 **Interface Note**: The interaction with the LLM occurs through a terminal window (command line interface). After running the script, a chat-like interface will open in your terminal where you can type your messages to communicate with the LLM. This is not a web-based chat; it operates entirely within the terminal. Type your messages and press Enter to send them, and type `exit` to stop the interaction.
@@ -67,7 +70,7 @@ To add more functions/tools for the LLM to use, follow these steps:
        # Function implementation
        return result
    ```
-3. **Add the Tool to the Tools List**: Update the `tools` list in `lm_tool_interaction.py` to include the new function:
+3. **Add the Tool to the Tools List**: Update the `tools` list in `llmchat.py` to include the new function:
    ```python
    tools = [
        # Existing tools
@@ -90,13 +93,13 @@ To add more functions/tools for the LLM to use, follow these steps:
        }
    ]
    ```
-4. **Update the Router**: Modify the `handle_tool_call` function in `lm_tool_interaction.py` to handle the new tool:
+4. **Update the Router**: Modify the `handle_tool_call` function in `llmchat.py` to handle the new tool:
    ```python
    elif tool_name == "new_function":
        result = new_function(tool_arguments['param1'])
        return f"Result of new_function: {result}"
    ```
-5. **Import the Function**: Ensure the new function is imported at the top of `lm_tool_interaction.py`:
+5. **Import the Function**: Ensure the new function is imported at the top of `llmchat.py`:
    ```python
    from tools.new_tool import new_function
    ```
@@ -216,10 +219,20 @@ You can extend this project by adding more functions that the LLM can call as to
 5. **Update System Message**: Optionally, update the system message to inform the model about the new capability:
    ```python
    messages = [
-       {"role": "system", "content": "You are a helpful assistant that can perform calculations and make HTTP requests. Use the multiply_numbers tool for multiplication and make_http_request tool for fetching web content."}
+       {"role": "system", "content": "You are a helpful assistant that can use tools to answer questions. If you don't know the answer, you can search for information. Always use the provided tools to assist with the queries. If a tool is not available for a specific task, inform the user and suggest an alternative approach."}
    ]
    ```
 
 Now, when interacting with the model, you can ask it to fetch content from a URL, for example: "Can you get information from https://api.example.com/data?" and it will call the `make_http_request` function to retrieve the data.
 
 Remember to handle errors appropriately in your functions and limit response sizes if necessary to avoid overwhelming the model with too much data.
+
+## System Prompt
+
+The system prompt used to initialize the chat with the LLM is as follows:
+
+```plaintext
+You are a helpful assistant that can use tools to answer questions. If you don't know the answer, you can search for information. Always use the provided tools to assist with the queries. If a tool is not available for a specific task, inform the user and suggest an alternative approach.
+```
+
+This prompt ensures that the model leverages the available tools to provide accurate and helpful responses.
