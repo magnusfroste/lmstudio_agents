@@ -4,7 +4,7 @@ This project provides a terminal-based chat interface for interacting with a loc
 
 ## About LM Studio
 
-[LM Studio](https://www.lmstudio.com) is a powerful platform for running local language models, making AI accessible to everyone without the need for cloud dependency. Over the past year, LM Studio has made remarkable progress, evolving from a simple local LLM runner to a comprehensive environment for AI experimentation and application development. Their team, a dedicated group of innovators based in Silicon Valley, has been instrumental in pushing the boundaries of what's possible with local AI, fostering a community of developers and researchers who are building the future of agentic AI.
+[LM Studio](https://lmstudio.ai) is a powerful platform for running local language models, making AI accessible to everyone without the need for cloud dependency. Over the past year, LM Studio has made remarkable progress, evolving from a simple local LLM runner to a comprehensive environment for AI experimentation and application development. Their team, a dedicated group of innovators based in Silicon Valley, has been instrumental in pushing the boundaries of what's possible with local AI, fostering a community of developers and researchers who are building the future of agentic AI.
 
 ## Project Structure
 
