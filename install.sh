@@ -206,6 +206,22 @@ else
     fi
 fi
 
+# Check read access to necessary files
+echo "Checking read access to necessary files..."
+if [ -r "examples/sample_text.txt" ] && [ -r "examples/sample.json" ]; then
+    echo "Read access to examples folder files: OK"
+else
+    echo "WARNING: No read access to one or more files in examples folder. The application may fail to read these files."
+    echo "Please ensure the files exist and you have permission to read them."
+fi
+
+if [ -r "product_sales.db" ]; then
+    echo "Read access to database file: OK"
+else
+    echo "WARNING: No read access to product_sales.db. The application may fail to access the database."
+    echo "Please ensure the file exists or will be created with proper permissions."
+fi
+
 # Install dependencies
 show_step 4 "Installing dependencies"
 if confirm "Install required dependencies now?"; then

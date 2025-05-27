@@ -146,9 +146,11 @@ tools = [
 ]
 
 # Global variables to track the last-used files for relevant tools
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 last_file_paths = {
-    "read_file_content": "examples/sample_text.txt",  # Default file for file operations
-    "read_json_file": "examples/sample.json"          # Default file for JSON operations
+    "read_file_content": os.path.join(BASE_DIR, "examples", "sample_text.txt"),  # Default file for file operations
+    "read_json_file": os.path.join(BASE_DIR, "examples", "sample.json")          # Default file for JSON operations
 }
 
 # ANSI escape codes for terminal formatting
@@ -200,13 +202,19 @@ def handle_tool_call(tool_call):
             response += f"{GREEN}- `{tool_name}`{RESET}: {tool_desc}\n"
         return response
     elif tool_name == "read_file_content":
-        path = tool_arguments.get('path', last_file_paths.get("read_file_content", "examples/sample_text.txt"))
+        path = tool_arguments.get('path', last_file_paths.get("read_file_content", os.path.join(BASE_DIR, "examples", "sample_text.txt")))
         last_file_paths["read_file_content"] = path  # Update last-used file
+        import os
+        full_path = os.path.abspath(path)
+        print(f"Attempting to read file from: {full_path}")
         result = read_file_content(path)
         return f"Content of file '{path}':\n{result}"
     elif tool_name == "read_json_file":
-        path = tool_arguments.get('path', last_file_paths.get("read_json_file", "examples/sample.json"))
+        path = tool_arguments.get('path', last_file_paths.get("read_json_file", os.path.join(BASE_DIR, "examples", "sample.json")))
         last_file_paths["read_json_file"] = path  # Update last-used file
+        import os
+        full_path = os.path.abspath(path)
+        print(f"Attempting to read JSON file from: {full_path}")
         result = read_json_file(path)
         return f"Content of JSON file '{path}':\n{result}"
     else:
