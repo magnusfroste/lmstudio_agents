@@ -203,6 +203,9 @@ def handle_tool_call(tool_call):
         return response
     elif tool_name == "read_file_content":
         path = tool_arguments.get('path', last_file_paths.get("read_file_content"))
+        # Ensure path is absolute by resolving relative paths against BASE_DIR
+        if not os.path.isabs(path):
+            path = os.path.join(BASE_DIR, path)
         last_file_paths["read_file_content"] = path  # Update last-used file
         full_path = os.path.abspath(path)
         print(f"Attempting to read file from: {full_path}")
@@ -210,6 +213,9 @@ def handle_tool_call(tool_call):
         return f"Content of file '{path}':\n{result}"
     elif tool_name == "read_json_file":
         path = tool_arguments.get('path', last_file_paths.get("read_json_file"))
+        # Ensure path is absolute by resolving relative paths against BASE_DIR
+        if not os.path.isabs(path):
+            path = os.path.join(BASE_DIR, path)
         last_file_paths["read_json_file"] = path  # Update last-used file
         full_path = os.path.abspath(path)
         print(f"Attempting to read JSON file from: {full_path}")
