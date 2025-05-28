@@ -231,16 +231,26 @@ def main():
         content = read_file_content(test_file_path)
         print(f"Successfully read file: {test_file_path}")
         print(f"First 100 characters of content: {content[:100]}...")
+    except FileNotFoundError:
+        print(f"Failed to find file {test_file_path}")
+        print("Please ensure 'sample_text.txt' is in the 'examples' folder within the project directory.")
+        print("If the file is missing, you can create a sample text file or specify a different path when using the tool.")
     except Exception as e:
         print(f"Failed to read file {test_file_path}: {str(e)}")
+        print("Please check file permissions or if the file is accessible.")
     
     test_json_path = os.path.join(BASE_DIR, "examples", "sample.json")
     try:
         json_content = read_json_file(test_json_path)
         print(f"Successfully read JSON file: {test_json_path}")
         print(f"JSON content summary: {len(json_content)} characters")
+    except FileNotFoundError:
+        print(f"Failed to find JSON file {test_json_path}")
+        print("Please ensure 'sample.json' is in the 'examples' folder within the project directory.")
+        print("If the file is missing, you can add a sample JSON file or specify a different path when using the tool.")
     except Exception as e:
         print(f"Failed to read JSON file {test_json_path}: {str(e)}")
+        print("Please check file permissions or if the file is accessible.")
     
     print("File reading test completed. Starting chat...")
     
