@@ -213,13 +213,67 @@ if [ -r "examples/sample_text.txt" ] && [ -r "examples/sample.json" ]; then
 else
     echo "WARNING: No read access to one or more files in examples folder. The application may fail to read these files."
     echo "Please ensure the files exist and you have permission to read them."
+    echo "On macOS, you may need to grant Terminal access to files in System Preferences > Security & Privacy > Privacy > Files and Folders."
 fi
 
-if [ -r "product_sales.db" ]; then
-    echo "Read access to database file: OK"
+if [ -f "product_sales.db" ]; then
+    if [ -r "product_sales.db" ]; then
+        echo "Read access to database file: OK"
+    else
+        echo "WARNING: No read access to product_sales.db. The application may fail to access the database."
+        echo "Please ensure you have permission to read the file."
+        echo "On macOS, you may need to grant Terminal access to files in System Preferences > Security & Privacy > Privacy > Files and Folders."
+    fi
 else
-    echo "WARNING: No read access to product_sales.db. The application may fail to access the database."
-    echo "Please ensure the file exists or will be created with proper permissions."
+    echo "Database file product_sales.db does not exist. Attempting to create it..."
+    if [ -f "create_sales_database.py" ]; then
+        echo "Running create_sales_database.py to initialize the database..."
+        if command -v python3 &> /dev/null; then
+            python3 create_sales_database.py
+            if [ $? -eq 0 ]; then
+                echo "Database created successfully."
+            else
+                echo "ERROR: Failed to create database with python3. Please check create_sales_database.py or run it manually."
+            fi
+        elif command -v python &> /dev/null; then
+            python create_sales_database.py
+            if [ $? -eq 0 ]; then
+                echo "Database created successfully."
+            else
+                echo "ERROR: Failed to create database with python. Please check create_sales_database.py or run it manually."
+            fi
+        else
+            echo "ERROR: Python not found. Please install Python and ensure 'python3' or 'python' is in your PATH."
+        fi
+    else
+        echo "ERROR: create_sales_database.py not found. Cannot initialize database."
+        echo "Please ensure the file exists in the project directory."
+    fi
+fi
+
+# Check for critical project directories
+echo "Checking project structure..."
+for dir in "examples" "tools" "templates"; do
+    if [ -d "$dir" ]; then
+        echo "Directory $dir: OK"
+    else
+        echo "WARNING: Directory $dir is missing. The application may not function correctly."
+        echo "Please ensure the project structure is intact. You may need to re-clone or re-download the project."
+    fi
+done
+
+# Check for LMStudio server availability (simple port check)
+echo "Checking if LMStudio server is running on localhost:1234..."
+if command -v nc &> /dev/null; then
+    if nc -z localhost 1234 2>/dev/null; then
+        echo "LMStudio server appears to be running on localhost:1234: OK"
+    else
+        echo "WARNING: LMStudio server is not running on localhost:1234. The application will fail to connect."
+        echo "Please ensure LMStudio is installed and running. Refer to the project documentation for setup instructions."
+    fi
+else
+    echo "Note: 'nc' (netcat) not found. Skipping LMStudio server check."
+    echo "Please ensure LMStudio is running on localhost:1234 before using the application."
 fi
 
 # Install dependencies

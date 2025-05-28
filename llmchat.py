@@ -1,5 +1,6 @@
 from openai import OpenAI
 import json
+import os
 
 # Initialize the OpenAI client for LM Studio
 client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
@@ -146,7 +147,6 @@ tools = [
 ]
 
 # Global variables to track the last-used files for relevant tools
-import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 last_file_paths = {
     "read_file_content": os.path.join(BASE_DIR, "examples", "sample_text.txt"),  # Default file for file operations
@@ -202,17 +202,15 @@ def handle_tool_call(tool_call):
             response += f"{GREEN}- `{tool_name}`{RESET}: {tool_desc}\n"
         return response
     elif tool_name == "read_file_content":
-        path = tool_arguments.get('path', last_file_paths.get("read_file_content", os.path.join(BASE_DIR, "examples", "sample_text.txt")))
+        path = tool_arguments.get('path', last_file_paths.get("read_file_content"))
         last_file_paths["read_file_content"] = path  # Update last-used file
-        import os
         full_path = os.path.abspath(path)
         print(f"Attempting to read file from: {full_path}")
         result = read_file_content(path)
         return f"Content of file '{path}':\n{result}"
     elif tool_name == "read_json_file":
-        path = tool_arguments.get('path', last_file_paths.get("read_json_file", os.path.join(BASE_DIR, "examples", "sample.json")))
+        path = tool_arguments.get('path', last_file_paths.get("read_json_file"))
         last_file_paths["read_json_file"] = path  # Update last-used file
-        import os
         full_path = os.path.abspath(path)
         print(f"Attempting to read JSON file from: {full_path}")
         result = read_json_file(path)
@@ -223,12 +221,29 @@ def handle_tool_call(tool_call):
 # Main chat loop
 def main():
     messages = [
-        # TOOL_METADATA_GUIDANCE: The system prompt below is crucial metadata for tool calling decisions.
-        # It instructs the LLM on its behavior regarding tool usage, explicitly guiding it to use tools when queries match tool purposes.
-        # It also sets expectations for when to assume default contexts (like last-used files), influencing how the LLM interprets follow-up queries.
-        # A clear system prompt ensures the LLM prioritizes tool calling appropriately; vague instructions can lead to inconsistent decisions.
-        {"role": "system", "content": "You are a helpful assistant that can use tools to answer questions. If you don't know the answer, you can search for information. Always use the provided tools to assist with queries. When you decide to use a tool, clearly inform the user by stating which tool you are calling and for what purpose before invoking it. For example, say 'I will call the [tool name] tool to [purpose].' If a tool is not available for a specific task, inform the user and suggest an alternative approach. For file-related tools like 'read_file_content' and 'read_json_file', if the user does not specify a file path, assume they are referring to the last-used file or the default file for that tool (e.g., 'examples/sample_text.txt' for text files, 'examples/sample.json' for JSON files). Track and reference the last-used file for subsequent queries unless a new path is provided."}
+        {"role": "system", "content": "You are a helpful assistant with access to various tools. Use them to assist the user."}
     ]
+    
+    # Test file reading capability at startup
+    print("Testing file reading capability...")
+    test_file_path = os.path.join(BASE_DIR, "examples", "sample_text.txt")
+    try:
+        content = read_file_content(test_file_path)
+        print(f"Successfully read file: {test_file_path}")
+        print(f"First 100 characters of content: {content[:100]}...")
+    except Exception as e:
+        print(f"Failed to read file {test_file_path}: {str(e)}")
+    
+    test_json_path = os.path.join(BASE_DIR, "examples", "sample.json")
+    try:
+        json_content = read_json_file(test_json_path)
+        print(f"Successfully read JSON file: {test_json_path}")
+        print(f"JSON content summary: {len(json_content)} characters")
+    except Exception as e:
+        print(f"Failed to read JSON file {test_json_path}: {str(e)}")
+    
+    print("File reading test completed. Starting chat...")
+    
     print("Start chatting with the model (type 'exit' to stop):")
     
     while True:
